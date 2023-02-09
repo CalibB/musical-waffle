@@ -9,6 +9,13 @@ html {
     padding: 0;
 }
 
+:root {
+    --primary-dark: #1A120B;
+    --primary-medium: #3C2A21;
+    --primary-light: #D5CEA3;
+    --primary-lightest: #E5E5CB;
+}
+
 main {
     display: flex;
     min-height: 100vh;
@@ -43,7 +50,7 @@ main {
     flex: 2;
     display: flex;
     flex-direction: column;
-    background-color: #E5E5CB;
+    background-color: var(--primary-lightest);
 }
 
 .greeting__text {
@@ -63,7 +70,7 @@ form .form__header {
     padding: 10px 0;
 }
 form .block {
-    background-color: #D5CEA3;
+    background-color: var(--primary-light);
 }
 
 .block,
@@ -88,8 +95,8 @@ form .block {
 
 .confirm-btn {
     border-style: solid;
-    border-color: #1A120B;
-    background-color: #D5CEA3;
+    border-color: var(--primary-dark);
+    background-color: var(--primary-light);
     border-radius: 8px;
     padding: .8rem 2rem;
     font-size: 1rem;
@@ -103,7 +110,7 @@ input {
     border-style: solid;
     border-width: 1px;
     border-color: grey;
-    background-color: #E5E5CB;
+    background-color: var(--primary-lightest);
     height: 20px;
     width: 300px;
 }
@@ -111,7 +118,7 @@ input {
 input:focus {
     border-style: solid;
     border-width: 2px;
-    border-color: #1A120B;
+    border-color: var(--primary-dark);
     outline: none;
 }
 
@@ -121,17 +128,14 @@ input:invalid {
     border-width: 2px;
 }
 
-h1 {
-    color: #1A120B;
-}
-
+h1,
 button p {
-    color:#1A120B;
+    color: var(--primary-dark);
 }
 
 p a {
     text-decoration: none;
-    color: #3C2A21;
+    color: var(--primary-medium);
 }
 
 p a:visited {
@@ -139,6 +143,6 @@ p a:visited {
 }
 
 .confirm-btn:hover {
-    background-color: #1A120B;
+    background-color: var(--primary-dark);
     color: #E5E5CB;
 }
