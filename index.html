@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Musical Waffles - Sign-up</title>
+    <title>Sign-up</title>
 </head>
 <body>
     <main>
@@ -42,7 +42,7 @@
                         <div class="inputs__row">
                             <label for="email">
                                 Email 
-                                <input type="email" id="email" name="email">
+                                <input type="email" id="email" name="email" pattern="/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g">
                             </label>
                             <label for="instrument">
                                 Instrument 
@@ -52,11 +52,11 @@
                         <div class="inputs__row">
                             <label for="pwd">
                                 Password
-                                <input type="password" id="pwd" name="pwd">
+                                <input type="password" id="pwd" name="pwd" required>
                             </label>
                             <label for="confirm_pwd">
                                 Confirm password 
-                                <input type="password" id="confirm_pwd" name="pwd_confirmed">
+                                <input type="password" id="confirm_pwd" name="pwd_confirmed" required>
                             </label>
                         </div>
                     </div>
