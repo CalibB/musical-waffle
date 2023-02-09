@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Musical Waffles - Sign-up</title>
+</head>
+<body>
+    <main>
+        <div class="left">
+            <div class="logo">
+                <img src="./assets/waffle-svgrepo-com.svg" alt="waffle" class="logo__img-left">
+                <h1 class="logo__text">
+                    Musical Waffles
+                </h1>
+                <img src="./assets/music-play-svgrepo-com.svg" alt="headphones" class="logo__img-right">
+            </div>
+        </div>
+        <div class="right">
+            <h1 class="greeting__text">
+                If you're here it means that you want to be part of the next generation of musicians who 
+                just love to perform at waffle houses... 
+            </h1>
+            <form action="/signup">
+                <div class="block">
+                    <h2 class="form__header">
+                        What are you waiting for?
+                    </h2>
+                    <div class="inputs">
+                        <div class="inputs__row">
+                            <label for="firstName">
+                                First name
+                                <input type="text" id="firstName" name="firstname">
+                            </label>
+                            <label for="lastName">
+                                Last name 
+                                <input type="text" id="lastName" name="lastname">
+                            </label>
+                        </div>
+                        <div class="inputs__row">
+                            <label for="email">
+                                Email 
+                                <input type="email" id="email" name="email">
+                            </label>
+                            <label for="instrument">
+                                Instrument 
+                                <input type="text" id="instrument" name="instrument">
+                            </label>
+                        </div>
+                        <div class="inputs__row">
+                            <label for="pwd">
+                                Password
+                                <input type="password" id="pwd" name="pwd">
+                            </label>
+                            <label for="confirm_pwd">
+                                Confirm password 
+                                <input type="password" id="confirm_pwd" name="pwd_confirmed">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="lower-block">
+                    <button class="confirm-btn" type="submit">
+                        Create Account
+                    </button>
+                    <p>
+                        Already have an account? <span>Log in</span>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
